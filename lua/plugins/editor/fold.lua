@@ -64,6 +64,9 @@ return {
 		opts = {
 			pauseFoldsOnSearch = true,
 			pauseFoldsOnInsert = true,
+			foldKeymaps = {
+				setup = false,
+			},
 		},
 	},
 	{
