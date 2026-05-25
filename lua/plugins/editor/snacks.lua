@@ -10,7 +10,7 @@ return {
 		-- scroll = { enabled = true },
 		debug = { enabled = true },
 		quickfile = { enabled = true },
-		-- zen = { enabled = true },
+		zen = { enabled = true },
 		picker = {
 			enabled = true,
 			layouts = {
@@ -62,7 +62,6 @@ return {
 			},
 		},
 		-- layout = { enabled = true },
-		-- lazygit = { enabled = true },
 		notifier = { enabled = true, timeout = 4200 },
 		-- indent = { enabled = true },
 		bigfile = { enabled = true },
@@ -73,13 +72,13 @@ return {
 	},
 	keys = {
 		-- Zen Mode: Focus on code
-		-- {
-		-- 	"<leader>z",
-		-- 	function()
-		-- 		Snacks.zen()
-		-- 	end,
-		-- 	desc = "Toggle Zen Mode",
-		-- },
+		{
+			"<leader>bz",
+			function()
+				Snacks.zen()
+			end,
+			desc = "Toggle Zen Mode",
+		},
 		-- Debug: Inspect variables/state
 		{
 			"<leader>nd",
@@ -111,14 +110,6 @@ return {
 				Snacks.bufdelete()
 			end,
 			desc = "Delete Buffer",
-		},
-		-- Open Lazygit
-		{
-			"<leader>gg",
-			function()
-				Snacks.lazygit()
-			end,
-			desc = "Lazygit",
 		},
 		-- Notification History
 		{
