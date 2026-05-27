@@ -142,6 +142,16 @@ vim.keymap.set("n", "<leader>tx", ":tabclose<CR>", opts) -- close current tab
 vim.keymap.set("n", "<leader>tn", ":tabn<CR>", opts) --  go to next tab
 vim.keymap.set("n", "<leader>tp", ":tabp<CR>", opts) --  go to previous tab
 
+-- Markdown
+vim.keymap.set("n", "<leader>mm", "<cmd>RenderMarkdown toggle<CR>", { desc = "Render Markdown Toggle" })
+vim.keymap.set("n", "<leader>mi", require("utils.insert-image").insert_image, { desc = "Insert Image" })
+vim.keymap.set("n", "<leader>meb", function()
+	local line = "$$\n\n$$"
+	vim.api.nvim_put(vim.split(line, "\n"), "l", true, true)
+end, { desc = "Insert Equation Block" })
+vim.keymap.set("n", "<leader>mel", "i$$$$<esc>hi", { desc = "Insert Equation Inline" })
+
+-- Swap
 vim.keymap.set("n", "gz", function()
 	require("utils.swap").swap()
 end, { desc = "Toggle Boolean/Value" })
