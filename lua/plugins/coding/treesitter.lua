@@ -26,6 +26,7 @@ return {
 				"cmake",
 				"markdown",
 				"markdown_inline",
+				"latex",
 				"bash",
 				"tsx",
 				"css",

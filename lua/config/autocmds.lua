@@ -132,6 +132,7 @@ vim.api.nvim_create_autocmd("FileType", {
 		"cmake",
 		"markdown",
 		"markdown_inline",
+		"latex",
 		"bash",
 		"zsh",
 		"tsx",
