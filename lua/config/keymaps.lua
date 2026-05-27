@@ -173,6 +173,12 @@ vim.keymap.set("t", "kj", [[<C-\><C-n>]], { desc = "Exit Terminal Mode" })
 vim.keymap.set("v", "<", "<gv", opts)
 vim.keymap.set("v", ">", ">gv", opts)
 
+-- Open link under cursor
+vim.keymap.set("n", "<leader>gx", function()
+	local url = vim.fn.expand("<cfile>")
+	vim.ui.open(url)
+end, { desc = "Open link under cursor" })
+
 -- Move text up and down
 vim.keymap.set("v", "<A-j>", ":m .+1<CR>==", opts)
 vim.keymap.set("v", "<A-k>", ":m .-2<CR>==", opts)

@@ -122,7 +122,7 @@ return {
 		"folke/tokyonight.nvim",
 		lazy = false,
 		priority = 1000,
-		enabled = false,
+		enabled = true,
 		config = finalize_theme,
 	},
 	{

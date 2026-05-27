@@ -4,7 +4,6 @@ return {
 		"moll/vim-bbye",
 		"nvim-tree/nvim-web-devicons",
 	},
-	enabled = false,
 	event = "VeryLazy",
 	config = function()
 		require("bufferline").setup({
