@@ -4,6 +4,9 @@ return {
 	dependencies = { "nvim-treesitter/nvim-treesitter", "nvim-tree/nvim-web-devicons" },
 	ft = { "markdown", "Avante" },
 	opts = {
+		completions = {
+			lsp = { enabled = true },
+		},
 		heading = {
 			icons = { "󰲡 ", "󰲣 ", "󰲥 ", "󰲧 ", "󰲩 ", "󰲫 " },
 		},
