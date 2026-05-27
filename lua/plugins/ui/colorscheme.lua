@@ -130,7 +130,7 @@ return {
 		name = "catppuccin",
 		lazy = false,
 		priority = 1000,
-		enabled = true,
+		enabled = false,
 		config = finalize_theme,
 	},
 	{
