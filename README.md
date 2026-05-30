@@ -3,6 +3,10 @@
 > [!NOTE]
 > CleanVim is **NOT** a Neovim distribution, it is a configuration, that means it won't get auto updated and it is yours to improve.
 
+> [!WARNING]
+> This configuration is no longer maintained, this config is merged with its original [botak.nvim](https://github.com/Ryanswa28h/botak.nvim) config.
+> To access this config from botak.nvim, set `vim.g.configpreset = "minimal"`.
+
 CleanVim is a simple, minimal Neovim configuration.
 
 Based of the [botak.nvim](https://github.com/Ryanswa28h/botak.nvim) config. With modifications to make it lighter and more minimal.
